@@ -9,7 +9,7 @@ html {
   font-size: 62.5%;
 }
 
-/* khôi phục lại cỡ chữ mặc định */
+/* khoi phục lại cỡ chữ mặc định */
 body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
@@ -19,12 +19,19 @@ body {
 
 a {
   text-decoration: none;
+  color: #171100; /* the a mac dinh mau xanh  (Unvisited)*/
 }
 .main-content {
   width: 1170px;
   max-width: calc(100% - 48px);
   margin-left: auto;
   margin-right: auto;
+}
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .heading-lv2 {
   color: #171100;
@@ -107,7 +114,7 @@ a {
 /* =========hero======== */
 .hero {
   padding: 57px 0 65px;
-  background-color: fffcf4;
+  background-color: #fffcf4;
 }
 
 .hero .body {
@@ -305,6 +312,7 @@ a {
   object-fit: cover;
 }
 .popular .course-item {
+  flex: 1;
   border-radius: 12px;
   border: 1px solid #e2dfda;
   background: #fff;
